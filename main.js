@@ -21,9 +21,9 @@ function draw() {
   playerLeft.display()
   playerRigt.display();
   Movement(playerLeft, playerRigt);
-  //checkForGoal();
   //console.log(ball.xMove);
-  //console.log(ball.yMove);
+  //console.log(ball.direction);
+  
   
 }
 
