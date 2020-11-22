@@ -1,6 +1,7 @@
 class Ball {
     constructor(x, y) {
-      this.speed = 5;
+      this.xMove;
+      this.yMove;
       this.x = windowWidth/2;
       this.y = windowHeight/2;
       console.log('circle created')
