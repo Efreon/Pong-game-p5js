@@ -21,7 +21,17 @@ function draw() {
   playerLeft.display()
   playerRigt.display();
   Movement(playerLeft, playerRigt);
+  //checkForGoal();
+  //console.log(ball.xMove);
+  //console.log(ball.yMove);
   
+}
+
+function checkForGoal(params) {
+  if ( (ball.x +ball.radius) >+ windowWidth) {
+    //console.log("scored");
+    return true;
+  }
 }
 
 function Movement(player1, player2){
@@ -45,6 +55,8 @@ function Movement(player1, player2){
     //console.log("leftgsvshggdvbdf");
     player2.moveDown();
   }
+
+ 
   
  
  

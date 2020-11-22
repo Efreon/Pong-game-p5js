@@ -1,15 +1,21 @@
 class Ball {
     constructor(x, y) {
-      this.xMove;
-      this.yMove;
+      this.xMove =Math.random() * (8 - 4) + 4; //Math.random() * (max - min) + min;
+      this.yMove = Math.random() * (5 - 2) + 2;
       this.x = windowWidth/2;
       this.y = windowHeight/2;
+      this.radius = 50;
       console.log('circle created')
     }
     
     move() {
-      this.x+= this.speed;
-      this.y+= this.speed;
+      
+      if ( (this.x +this.radius || this.x -this.radius<=0) >+ windowWidth) {
+        console.log("scored");
+      }
+
+      this.x+= this.xMove;
+      this.y+= this.yMove;
     }
   
     display() {
@@ -17,7 +23,7 @@ class Ball {
       noFill();
       stroke(255);
       strokeWeight(5);
-      ellipse(this.x, this.y, 50);
+      ellipse(this.x, this.y, this.radius);
     }
 
   
