@@ -27,12 +27,7 @@ function draw() {
   
 }
 
-function checkForGoal(params) {
-  if ( (ball.x +ball.radius) >+ windowWidth) {
-    //console.log("scored");
-    return true;
-  }
-}
+
 
 function Movement(player1, player2){
 
