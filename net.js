@@ -9,8 +9,7 @@ class Net{
     }
 
     display(){
-        
-        
+            
         let count = 25;
 
         stroke(255);

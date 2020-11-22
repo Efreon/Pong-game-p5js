@@ -16,6 +16,7 @@ function draw() {
 
   background(0);
   net.display();
+  ball.move();
   ball.display();
   playerLeft.display()
   playerRigt.display();
